@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ee">
+
+  <head>
+    <title>Triumfi health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Triumfi mobiilimängu kasutajaks registreerumine">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+                
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 my-md-auto">
+              <h1 class="display-4 mb-3">Triumf Health tervisem&auml;ng</h1>
+              <p class="lead mb-4">Kasutajaks registreerimine</p>
+            </div>
+            <div class="col-md-6"><img class="img-fluid" src="./images/kuvapiltnr2.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light mb-auto">
+          <a class="navbar-brand mx-auto" href="./index.html"><img src="images/Triumf_Health_logo.png" alt="Triumf Health" width="200"></a>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./registration.html">Registreerimisleht</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paigaldamine.html">M&auml;ngu paigaldamine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meie meedias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kkk.html">KKK</a>
+            </li>
+          </ul>
+        </nav>
+               
+
+      <section class="py-5">
+        <div class="container">
+
+          <div class="row">
+            
+            <div class="col-md-12">
+              <h4 class="mb-3">Registreerimisvorm</h4>
+
+              <form class="needs-validation">
+
+                <div class="row">
+                  <div class="form-group col-md-7 mb-3">
+                    <label for="emailInput">Email</label>
+                    <input class="form-control" id="emailInput" type="email" placeholder="nimi@mail.com">
+                    <div class="invalid-feedback">Palun sisesta korrektne e-maili aadress</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-7 mb-3">
+                    <label for="gender">Mängu kasutama hakkava lapse sugu</label>
+
+                    <select class="custom-select w-200" id="gender" required>
+                      <option value="" selected disabled>Palun vali... </option>
+                      <option value="F">T&uuml;druk </option>
+                      <option value="M">Poiss </option>
+                      <option value="NA">Ei soovi avaldada</option>
+                    </select>
+                    <div class="invalid-feedback">Palun tee valik esitatud variantide vahel</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-7 mb-3">
+                    <label for="ageGroup">Mängu kasutama hakkava lapse vanus</label>
+
+                    <select class="custom-select w-200" id="ageGroup" required>
+                      <option value="" selected disabled>Palun vali... </option>
+                      <option value="6">6 aastat</option>
+                      <option value="7">7 aastat</option>
+                      <option value="8">8 aastat</option>
+                      <option value="9">9 aastat</option>
+                      <option value="10">10 aastat</option>
+                      <option value="11">11 aastat</option>
+                      <option value="12">12 aastat</option>
+                      <option value="13">13 aastat</option>
+                      <option value="14">14 aastat</option>
+                    </select>
+                    <div class="invalid-feedback">Palun tee valik esitatud variantide vahel</div>
+                  </div>
+                </div>
+
+
+               
+                <div class="row">
+                  <div class="form-group col-md-7 mb-3">
+                    <label for="diagnoseQ">Kas m&auml;ngu kasutama hakkaval lapsel on diagnoositud mõni kroonilise kuluga haigus?</label>
+
+                    <select class="custom-select w-200" id="diagnoseQ" required>
+                      <option value="" selected disabled>Palun vali... </option>
+                      <option value="6">Ei</option>
+                      <option value="7">Jah</option>
+                      <option value="8">Ei soovi vastata </option>
+                    </select>
+                    <div class="invalid-feedback">Palun tee valik esitatud variantide vahel</div>
+                  </div>
+                </div>
+                
+
+                <hr class="mb-4">
+                <div class="d-flex justify-content my-4">
+                  <p> M&auml;ngu kasutavate laste tagasiside on meie jaoks hindamatu v&auml;&auml;rtusega, et muuta m&auml;ngu paremaks nii f&uuml;&uuml;siliste terviseprobleemideta kui ka kroonilise haiguse diagnoosiga laste jaoks. Hindame väga kui laps annaks peale mängu kasutamise perioodi lõppu tagasiside oma kogemusest – mis meeldis ja mis oleks võinud olla teisiti. Tagasiside andmine toimub ankeedi kaudu ja selle t&auml;itmiseks kulub u 5 minutit.</p>
+                </div>
+
+                <p class="mb-3">Tagasiside andmise nõusolek</p>
+                <div class="form-group d-block my-3">
+                  <div class="custom-control custom-radio">
+                    <input class="custom-control-input" id="feedYes" name="feedbackQ" type="radio" checked required>
+                    <label class="custom-control-label" for="feedYes">Jah</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input class="custom-control-input" id="feedNo" name="feedbackQ" type="radio" required>
+                    <label class="custom-control-label" for="feedNo">Ei</label>
+                  </div>
+                </div>
+
+                <hr class="mb-4">
+                <div class="form-group d-flex justify-content my-4">
+                  <p>Soovi korral saad saad siia kirjutada veel oma mõtteid, soovitusi, küsimusi. Vastame neile peagi e-maili teel. Registreerimise lõpetamiseks vajuta kindlasti allolevale nupule "Saada registreerimisvorm". </p>
+                </div>
+                <div class="form-group form-group d-block my-3">
+                  <label for="endOpenText">Sinu tähelepanekud ja soovitused</label>
+                  <textarea class="form-control" id="endOpenText" rows="3"></textarea>
+                </div>
+
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Saada registreerimisvorm</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      
+
+
+
+
+
+                
+                
+      <footer class="py-3"><div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <h5 class="mb-3"><a href="https://triumf.health/"><img src="images/Triumf_Health_logo.png" alt="Triumf Health" width="150"></a></h5>
+          <div class="d-flex mb-3"><a href="https://twitter.com/triumfhq?lang=en"><img class="mr-3" src="placeholder/icons/twitter.svg" alt=""></a><a href="https://www.facebook.com/triumf.health/"><img class="mr-3" src="placeholder/icons/facebook-f.svg" alt=""></a><a href="https://www.linkedin.com/company/triumf-health/"><img src="placeholder/icons/linkedin-in.svg" alt=""></a></div>
+          <div class="d-flex">
+            <p class="mb-0 small">&copy; 2020 Triumf Health</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>
+
