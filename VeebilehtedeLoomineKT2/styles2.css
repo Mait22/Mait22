@@ -1,0 +1,277 @@
+/* päise kujundus */
+header h1 {
+  font-family: "Gentium Basic", serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #271f1f;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22x;
+  letter-spacing: 5px;
+  color: #271f1f;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+header .logo {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0px 0 0px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-image img {
+  width: 100%;
+}
+
+header .header-banner {
+  background-image: url("img/header-home-precon-food.jpg");
+  width: 100%;
+  height: calc(100vh - 600px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto;
+  background-position: center;
+}
+
+/*Navigatsioon*/
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  text-align: center; /*IE*/
+  width: fit-content;
+}
+
+/*Navigatsiooni listielemendid*/
+header nav ul li {
+  display: inline-block;
+  padding: 16px 16px;
+}
+
+/*Navigatsiooni lingid */
+nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #172029;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.gallery-h2 {
+  font-family: "Gentium Basic", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #3a383d;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.index-header {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 10%;
+  margin-bottom: 0;
+  margin-top: 5%;
+  padding-left: 10px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 10%;
+  margin-top: 0;
+  justify-content: space-evenly;
+}
+
+.block1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5%;
+  flex: 50%;
+}
+
+.block1 p {
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/*
+.block2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5%;
+}
+*/
+
+.block1 img {
+  min-width: auto;
+  min-height: auto;
+  max-width: 100%;
+}
+
+.wrapper2 {
+  display: flex;
+  margin: 10%;
+  margin-top: 0;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.wrapper2 .gallery-image .block11:hover p {
+  opacity: 1;
+}
+
+.block11 {
+  flex-basis: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.block11 img {
+  min-width: 300px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.gallery-image {
+  margin: 10px;
+  position: relative;
+  text-align: center;
+  -webkit-flex-basis: 300px;
+  -moz-flex-basis: 300px;
+  flex-basis: 300px;
+}
+
+.block11 p {
+  /*kujundus*/
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0;
+
+  /*positsioneerimine*/
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  .index-header {
+    padding: 0px 0 0px 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin: 0%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    padding-left: 10px;
+  }
+
+  .wrapper {
+    display: flex;
+    margin: 0;
+  }
+
+  .block1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5%;
+    flex: 100%;
+  }
+
+  #block1_picture {
+    display: none;
+  }
+
+  .wrapper2 {
+    display: flex;
+    margin: 10%;
+    margin-top: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+}
+
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #172029;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.disclaimer {
+  display: none;
+}
+
+footer ul {
+  width: fit-content;
+  padding-left: 0px;
+  flex: 50%;
+}
+
+footer ul li {
+  display: block;
+  padding: 0 0 10px 0;
+}
+
+footer ul li p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+footer ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-sm {
+  width: 32px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
